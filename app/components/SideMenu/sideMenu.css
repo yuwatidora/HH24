@@ -1,10 +1,27 @@
-.sideMenu{
+.sideMenu {
     position: fixed;
-    top: 22%; 
-    left: 5px;
+    top: 50%; /* Center vertically */
+    left: 0; /* Align to the left */
     width: 50px;
+    transform: translateY(-50%); /* Center vertically */
     padding-top: 20px;
-    /*border-right: 2px solid aliceblue;*/
+    /* border-right: 2px solid aliceblue; */ /* Uncomment if needed */
+    transition: transform 0.3s ease; /* Smooth transition for visibility change */
+}
+
+/* Hide the side menu on small screens */
+@media (max-width: 1000px) {
+    .sideMenu {
+        display: none; /* Hide the side menu */
+    }
+}
+
+/* Adjust the side menu for very small screens if needed */
+@media (max-width: 1000px) {
+    .sideMenu {
+        width: 40px; /* Adjust width for very small screens */
+        padding-top: 10px; /* Adjust padding */
+    }
 }
 .item{
     /*padding: 3%;*/

@@ -10,7 +10,7 @@
     position: fixed;
     top: 5%;
     left: 5%;
-    width: 90%;
+    width: 90% ;
     background-color:linear-gradient(to bottom, black , #2c3c94 , #2c3c94, black, black, #2c3c94, #2c3c94, black, black, #2c3c94, black, black);
     text-align: center;
     z-index: 10;
@@ -20,6 +20,21 @@
     backdrop-filter: blur(50px);
   }
 
+
+/* Hide the side menu on small screens */
+@media (max-width: 1000px) {
+  .menuBar {
+      display: none; /* Hide the side menu */
+  }
+}
+
+/* Adjust the side menu for very small screens if needed */
+@media (max-width: 1000px) {
+  .menuBar {
+      width: 40px; /* Adjust width for very small screens */
+      padding-top: 10px; /* Adjust padding */
+  }
+}
 .item{
     padding-right: 2%;
     padding-left: 1%;
