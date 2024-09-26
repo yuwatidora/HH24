@@ -34,10 +34,10 @@
 .welcome{
     /* Welcome to */
     position: absolute;
-    width: 304px;
+    width: 30%;
  
     left: 35%;
-    top: 20%;
+    top: 25%;
   
     font-family: 'Orbitron';
     font-size: 3vw;
@@ -46,7 +46,7 @@
   }
 
 .top-heading {
-  top: 28%;
+  top: 30%;
   left: 35%;
   position: absolute;
   font-family: 'Audiowide';
@@ -58,7 +58,7 @@
 
 .heading_shadow {
   padding-left: 10px;
-  top: 30%;
+  top: 32%;
   left: 35%;
   position: absolute;
   font-family: 'Audiowide';
@@ -70,8 +70,9 @@
 
 .desc {
   font-family: 'Pixelify';
-  top: 20%;
-  font-size: 1.5rem; /* Responsive font size */
+  top: 35%;
+  left: 35%;
+  font-size: 2vw; /* Responsive font size */
   color: #9CFFFC;
   margin: 20px 0; /* Space above and below */
 }
@@ -79,6 +80,7 @@
 .buttonLayout {
   align-items: center;
   left: 25%;
+  top: 55%;
   flex-direction: row;
   gap: 10px; /* Space between buttons */
   flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
@@ -87,14 +89,13 @@
 .image{
   position: absolute;
   top:20%;
-  left : 12%;
-  z-index: -1;
-  max-width: 300px;
+  left : 8%;
+  max-width: 25%;
 }
 /* Media Queries for additional responsiveness */
 @media (max-width: 768px) {
   .image{
-    size: 20%;
+    position: auto;
   }
   .welcome {
       font-size: 2rem; /* Smaller font size on small screens */
