@@ -20,6 +20,7 @@
   font-style: normal;
 }
   
+
 .buttonLayout{
     display: flex;
     flex-direction: row;
@@ -36,28 +37,28 @@
     width: 304px;
  
     left: 35%;
-    top: 15%;
+    top: 20%;
   
     font-family: 'Orbitron';
-    font-size: 40px;
+    font-size: 3vw;
     line-height: 48px;
     color: #FFFFFF;
   }
 
-  .heading {
-    top: 20%;
-    left: 35%;
-    position: absolute;
-    font-family: 'Audiowide';
-    font-size: 5vw; /* Responsive font size */
-    color: #00FFF7;
-  }
-
-
+.top-heading {
+  top: 28%;
+  left: 35%;
+  position: absolute;
+  font-family: 'Audiowide';
+  padding-left: 10px;
+  font-size: 5vw; /* Responsive font size */
+  color: #00FFF7;
+}
 
 
 .heading_shadow {
-  top: 21%;
+  padding-left: 10px;
+  top: 30%;
   left: 35%;
   position: absolute;
   font-family: 'Audiowide';
@@ -88,11 +89,12 @@
   top:20%;
   left : 12%;
   z-index: -1;
+  max-width: 300px;
 }
 /* Media Queries for additional responsiveness */
 @media (max-width: 768px) {
   .image{
-
+    size: 20%;
   }
   .welcome {
       font-size: 2rem; /* Smaller font size on small screens */
@@ -100,15 +102,30 @@
 
   .heading,
   .heading_shadow {
-      font-size: 6vw; /* Larger text on smaller screens */
+      font-size: 5vw; /* Larger text on smaller screens */
   }
 
   .desc {
       font-size: 1.2rem; /* Smaller font size on small screens */
   }
 
-  .buttonLayout {
-      /* Stack buttons vertically */
-      align-items: center; /* Center buttons */
+}
+
+@media (max-width: 468px) {
+  .image{
+    position: auto;
+  }
+  .welcome {
+      position: auto;
+      font-size: 12rem; /* Smaller font size on small screens */
+  }
+
+  .heading,
+  .heading_shadow {
+      font-size: 5vw; /* Larger text on smaller screens */
+  }
+  .buttonLayout{
+    gap: 5px;
+    flex-direction: column;
   }
 }
