@@ -11,6 +11,7 @@
 }
 
 
+
 @font-face {
     font-family: 'Orbitron';
     src: url(../../../public/fonts/Orbitron-Regular.ttf) format('woff2');
@@ -44,7 +45,11 @@
     /* font-size: 80%; */
 
 }
-
+#stats .container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 /* heading: HackHolyoke 2022 */
 /* #stats .heading_container {
     display: flex;
@@ -64,7 +69,7 @@
     background-color: #00FFF7;
     width: 20%;
     top: 50%;
-    left: 5%;
+    left: 2%;
 
 }
 
@@ -74,12 +79,12 @@
     background-color: #00FFF7;
     top:50%;
     width: 20%;
-    right: 5%;
+    right: 2%;
 
 }
 #stats .stats_heading{
     font-family: "Audiowide", sans-serif;
-    font-size: 120%;
+    font-size: 5vw;
     color: transparent;
     -webkit-text-stroke-width: 2px; /* Set the width of the text stroke */
     -webkit-text-stroke-color: #00FFF7; /* Set the stroke color */
@@ -89,7 +94,7 @@
 #stats .stats_heading_2{
     position: absolute;
     font-family: "Orbitron";
-    font-size: 40%;
+    font-size: 3vw;
     top: 55%;
     left: 45%;
     color: #00FFF7;
@@ -209,37 +214,12 @@
     height: auto;       /* Adjust as necessary for image size */
 }
 
-@media (max-width: 1420px){
+@media (max-width: 1720px){
     .major, .participants, .colleges, .participating, .th, .year,.line-left, .line-right, .stats_heading_2,.majors_num,.years_num,.participants_num,.colleges_num,.stats_words,.stats_heading,.stats_num,.stats-container,.stat-item, .colleges{
-        font-size: 90%;
+        font-size: 4vw;
     }
-    .line-left{
-        display: none;
-    } 
-    .line-right{
-        display: none;
-    }
-    /* .container{
+
+    .container{
         max-width: 1420px
-    } */
-}
-
-
-@media (max-width: 768 px){
-    .major, .participants, .colleges, .participating, .th, .year, .stats_heading_2,.majors_num,.years_num,.participants_num,.colleges_num,.stats_words,.stats_heading,.stats_num,.stats-container,.stat-item, .colleges{
-        font-size: 40%;
-    }
-    .line-left, .line-right{
-        display: none;
-    }
-}
-
-@media (max-width: 475 px){
-    .container ,.major, .participants, .colleges, .participating, .th, .year, .stats_heading_2,.majors_num,.years_num,.participants_num,.colleges_num,.stats_words,.stats_heading,.stats_num,.stats-container,.stat-item, .colleges{
-        font-size: 0.2%;
-
-    }
-    .line-left, .line-right{
-        display: none;
     }
 }
